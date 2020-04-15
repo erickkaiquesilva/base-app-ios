@@ -18,6 +18,9 @@
 		F433C4F02446A8700077FFA4 /* AppCoordinatorProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433C4EF2446A8700077FFA4 /* AppCoordinatorProtocols.swift */; };
 		F433C4F22446AB1B0077FFA4 /* InitialCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433C4F12446AB1B0077FFA4 /* InitialCoordinator.swift */; };
 		F433C4F52446AC770077FFA4 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433C4F42446AC770077FFA4 /* SignInView.swift */; };
+		F433C4F72446AFD00077FFA4 /* AppAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433C4F62446AFD00077FFA4 /* AppAssets.swift */; };
+		F433C4FA2446B0B10077FFA4 /* GeneralStrings+PtBr.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433C4F92446B0B10077FFA4 /* GeneralStrings+PtBr.swift */; };
+		F433C4FC2446B0D70077FFA4 /* GeneralStrings+PtBr.strings in Resources */ = {isa = PBXBuildFile; fileRef = F433C4FB2446B0D70077FFA4 /* GeneralStrings+PtBr.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		F433C4EF2446A8700077FFA4 /* AppCoordinatorProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorProtocols.swift; sourceTree = "<group>"; };
 		F433C4F12446AB1B0077FFA4 /* InitialCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialCoordinator.swift; sourceTree = "<group>"; };
 		F433C4F42446AC770077FFA4 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		F433C4F62446AFD00077FFA4 /* AppAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssets.swift; sourceTree = "<group>"; };
+		F433C4F92446B0B10077FFA4 /* GeneralStrings+PtBr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GeneralStrings+PtBr.swift"; sourceTree = "<group>"; };
+		F433C4FB2446B0D70077FFA4 /* GeneralStrings+PtBr.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = "GeneralStrings+PtBr.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +142,7 @@
 		F433C4E52446A7440077FFA4 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				F433C4F82446B0700077FFA4 /* Strings */,
 				F433C4BE2446A7360077FFA4 /* Assets.xcassets */,
 				F433C4C02446A7360077FFA4 /* LaunchScreen.storyboard */,
 			);
@@ -152,6 +159,7 @@
 		F433C4E72446A75D0077FFA4 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				F433C4F62446AFD00077FFA4 /* AppAssets.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -207,6 +215,15 @@
 				F433C4F42446AC770077FFA4 /* SignInView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F433C4F82446B0700077FFA4 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				F433C4F92446B0B10077FFA4 /* GeneralStrings+PtBr.swift */,
+				F433C4FB2446B0D70077FFA4 /* GeneralStrings+PtBr.strings */,
+			);
+			path = Strings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +330,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F433C4FC2446B0D70077FFA4 /* GeneralStrings+PtBr.strings in Resources */,
 				F433C4C22446A7360077FFA4 /* LaunchScreen.storyboard in Resources */,
 				F433C4BF2446A7360077FFA4 /* Assets.xcassets in Resources */,
 			);
@@ -344,7 +362,9 @@
 				F433C4F22446AB1B0077FFA4 /* InitialCoordinator.swift in Sources */,
 				F433C4EE2446A8490077FFA4 /* AppCoordinator.swift in Sources */,
 				F433C4BA2446A7320077FFA4 /* SignInViewController.swift in Sources */,
+				F433C4FA2446B0B10077FFA4 /* GeneralStrings+PtBr.swift in Sources */,
 				F433C4B62446A7320077FFA4 /* AppDelegate.swift in Sources */,
+				F433C4F72446AFD00077FFA4 /* AppAssets.swift in Sources */,
 				F433C4B82446A7320077FFA4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

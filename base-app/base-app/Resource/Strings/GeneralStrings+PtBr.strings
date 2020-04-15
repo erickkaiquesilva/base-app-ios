@@ -1,0 +1,16 @@
+/* 
+  GeneralStrings+PtBr.strings
+  base-app
+
+  Created by Erick Kaique Da Silva on 15/04/20.
+  Copyright © 2020 Erick Kaique Da Silva. All rights reserved.
+*/
+// MARK: - Scene Sign In
+"placeholderEmailAccess" = "Seu Email de Acesso";
+"placeholderpasswordAccess" = "Sua Senha de Acesso";
+"signInBtn" = "Entrar";
+"notRegisteredBtn" = "Não sou cadastrado ainda!";
+// MARK: - Scene Sign Up
+// MARK: - Scene Home
+// MARK: - Scene Profile
+// MARK: - Scene First Access
