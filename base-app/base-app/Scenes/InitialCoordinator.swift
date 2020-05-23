@@ -17,7 +17,7 @@ class InitialCoordinator: AppCoordinatorProtocol {
     }
     
     func start() {
-        let viewController = SignInViewController()
+        let viewController = IntroViewController()
         navigationController.pushViewController(viewController, animated: true)
     }
 }
