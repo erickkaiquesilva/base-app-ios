@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F405FCD22477260400E4D222 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F405FCD12477260400E4D222 /* UIViewController+Ext.swift */; };
+		F405FCD42477264100E4D222 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F405FCD32477264100E4D222 /* IntroViewController.swift */; };
+		F405FCD62477266300E4D222 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F405FCD52477266300E4D222 /* IntroView.swift */; };
+		F405FCD9247726F800E4D222 /* ButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = F405FCD8247726F800E4D222 /* ButtonCustom.swift */; };
 		F433C4B62446A7320077FFA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433C4B52446A7320077FFA4 /* AppDelegate.swift */; };
 		F433C4B82446A7320077FFA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433C4B72446A7320077FFA4 /* SceneDelegate.swift */; };
 		F433C4BA2446A7320077FFA4 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433C4B92446A7320077FFA4 /* SignInViewController.swift */; };
@@ -41,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F405FCD12477260400E4D222 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		F405FCD32477264100E4D222 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		F405FCD52477266300E4D222 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
+		F405FCD8247726F800E4D222 /* ButtonCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCustom.swift; sourceTree = "<group>"; };
 		F433C4B22446A7320077FFA4 /* base-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "base-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F433C4B52446A7320077FFA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F433C4B72446A7320077FFA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +96,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F405FCCF2477259400E4D222 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				F405FCD0247725A200E4D222 /* View */,
+				F405FCD32477264100E4D222 /* IntroViewController.swift */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
+		F405FCD0247725A200E4D222 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F405FCD52477266300E4D222 /* IntroView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F405FCD7247726E800E4D222 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				F405FCD8247726F800E4D222 /* ButtonCustom.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
 		F433C4A92446A7320077FFA4 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +175,7 @@
 		F433C4E52446A7440077FFA4 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				F47331732478713E003C7B91 /* Images */,
 				F433C4F82446B0700077FFA4 /* Strings */,
 				F433C4BE2446A7360077FFA4 /* Assets.xcassets */,
 				F433C4C02446A7360077FFA4 /* LaunchScreen.storyboard */,
@@ -159,7 +193,9 @@
 		F433C4E72446A75D0077FFA4 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				F405FCD7247726E800E4D222 /* Button */,
 				F433C4F62446AFD00077FFA4 /* AppAssets.swift */,
+				F405FCD12477260400E4D222 /* UIViewController+Ext.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -179,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				F433C4F12446AB1B0077FFA4 /* InitialCoordinator.swift */,
+				F405FCCF2477259400E4D222 /* Intro */,
 				F433C4EC2446A7CC0077FFA4 /* Home */,
 				F433C4EB2446A7C20077FFA4 /* SignUp */,
 				F433C4EA2446A7B20077FFA4 /* SignIn */,
@@ -224,6 +261,13 @@
 				F433C4FB2446B0D70077FFA4 /* GeneralStrings+PtBr.strings */,
 			);
 			path = Strings;
+			sourceTree = "<group>";
+		};
+		F47331732478713E003C7B91 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,11 +403,15 @@
 			files = (
 				F433C4F02446A8700077FFA4 /* AppCoordinatorProtocols.swift in Sources */,
 				F433C4F52446AC770077FFA4 /* SignInView.swift in Sources */,
+				F405FCD22477260400E4D222 /* UIViewController+Ext.swift in Sources */,
 				F433C4F22446AB1B0077FFA4 /* InitialCoordinator.swift in Sources */,
 				F433C4EE2446A8490077FFA4 /* AppCoordinator.swift in Sources */,
+				F405FCD62477266300E4D222 /* IntroView.swift in Sources */,
 				F433C4BA2446A7320077FFA4 /* SignInViewController.swift in Sources */,
 				F433C4FA2446B0B10077FFA4 /* GeneralStrings+PtBr.swift in Sources */,
 				F433C4B62446A7320077FFA4 /* AppDelegate.swift in Sources */,
+				F405FCD42477264100E4D222 /* IntroViewController.swift in Sources */,
+				F405FCD9247726F800E4D222 /* ButtonCustom.swift in Sources */,
 				F433C4F72446AFD00077FFA4 /* AppAssets.swift in Sources */,
 				F433C4B82446A7320077FFA4 /* SceneDelegate.swift in Sources */,
 			);
