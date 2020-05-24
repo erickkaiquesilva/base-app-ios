@@ -10,6 +10,7 @@ import UIKit
 
 class SignUpViewController: UIViewController {
     private let contentView: SignUpView
+    weak var delegate: SignUpViewControllerDelegate?
     
     init(contentView: SignUpView = SignUpView()) {
         self.contentView = contentView
@@ -25,6 +26,11 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setupNavBar(backgroundColor: AppColors().greenDark)
+    }
+    
     override func loadView() {
         view = contentView
     }
@@ -32,6 +38,7 @@ class SignUpViewController: UIViewController {
     private func bindLayoutEvents() {
         contentView.handleFinishRegister = { [weak self] nameUser, cpf, emailAdress, password in
             print("DADOS USUÁRIO: \(nameUser), \(cpf), \(emailAdress), \(password)")
+            self?.delegate?.showWelcome()
         }
     }
 }

@@ -34,6 +34,7 @@
 		F473318D247A2EA7003C7B91 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F473318C247A2EA7003C7B91 /* SignUpViewController.swift */; };
 		F4733191247AE0D0003C7B91 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4733190247AE0D0003C7B91 /* WelcomeViewController.swift */; };
 		F4733193247AE0D9003C7B91 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4733192247AE0D9003C7B91 /* WelcomeView.swift */; };
+		F4733195247AE9AD003C7B91 /* SignUpProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4733194247AE9AD003C7B91 /* SignUpProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		F473318C247A2EA7003C7B91 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		F4733190247AE0D0003C7B91 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		F4733192247AE0D9003C7B91 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		F4733194247AE9AD003C7B91 /* SignUpProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,10 +239,10 @@
 			isa = PBXGroup;
 			children = (
 				F433C4F12446AB1B0077FFA4 /* InitialCoordinator.swift */,
-				F473318E247AE0B4003C7B91 /* Welcome */,
 				F405FCCF2477259400E4D222 /* Intro */,
 				F433C4EA2446A7B20077FFA4 /* SignIn */,
 				F4733188247A2E74003C7B91 /* SignUp */,
+				F473318E247AE0B4003C7B91 /* Welcome */,
 				F433C4EC2446A7CC0077FFA4 /* Home */,
 			);
 			path = Scenes;
@@ -324,6 +326,7 @@
 			children = (
 				F4733189247A2E86003C7B91 /* View */,
 				F473318C247A2EA7003C7B91 /* SignUpViewController.swift */,
+				F4733194247AE9AD003C7B91 /* SignUpProtocols.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -486,6 +489,7 @@
 			files = (
 				F433C4F02446A8700077FFA4 /* AppCoordinatorProtocols.swift in Sources */,
 				F473317E2479E93F003C7B91 /* AppImages.swift in Sources */,
+				F4733195247AE9AD003C7B91 /* SignUpProtocols.swift in Sources */,
 				F433C4F52446AC770077FFA4 /* SignInView.swift in Sources */,
 				F405FCD22477260400E4D222 /* UIViewController+Ext.swift in Sources */,
 				F433C4F22446AB1B0077FFA4 /* InitialCoordinator.swift in Sources */,
