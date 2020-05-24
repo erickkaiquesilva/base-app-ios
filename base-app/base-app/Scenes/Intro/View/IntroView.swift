@@ -35,6 +35,16 @@ class IntroView: UIView {
         return label
     }()
     
+    private lazy var buttonSignIn = ButtonDefault(title: "Já Tenho Login")
+    
+    private lazy var buttonSignUp: ButtonDefault = {
+        let button = ButtonDefault(title: "Fazer Cadastro")
+        button.colorButton = .clear
+        button.titleColor = .white
+        button.borderColor  = .white
+        return button
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = AppColors().greenDark
@@ -54,6 +64,8 @@ class IntroView: UIView {
         addSubview(recycleIcon)
         addSubview(imageLogo)
         addSubview(slogan)
+        addSubview(buttonSignIn)
+        addSubview(buttonSignUp)
     }
     
     private func addConstraints() {
@@ -71,6 +83,16 @@ class IntroView: UIView {
             $0.under(view: imageLogo, offSet: 16)
             $0.left(alignedWith: self, offSet: 16)
             $0.right(alignedWith: self, offSet: 16)
+        }
+        buttonSignIn.layout.applyConstraint {
+            $0.above(view: buttonSignUp, offSet: 16)
+            $0.left(alignedWith: self, offSet: 36)
+            $0.right(alignedWith: self, offSet: 36)
+        }
+        buttonSignUp.layout.applyConstraint {
+            $0.bottomSafaArea(alignedWith: self, offset: 16)
+            $0.left(alignedWith: self, offSet: 36)
+            $0.right(alignedWith: self, offSet: 36)
         }
     }
 }
