@@ -7,6 +7,8 @@
 */
 // MARK: - Scene Intro
 "slogan" = "Um jeito diferente de reciclar";
+"signInButton" = "Já Tenho Login";
+"signUpButton" = "Fazer Cadastro";
 // MARK: - Scene Sign In
 "placeholderEmailAccess" = "Seu Email de Acesso";
 "placeholderpasswordAccess" = "Sua Senha de Acesso";

@@ -13,6 +13,8 @@ public class AppStrings {
     
     // MARK: - LocalizedString Intro
     public let slogan = localizedString(forKey: "slogan")
+    public let signInButton = localizedString(forKey: "signInButton")
+    public let signUpButton = localizedString(forKey: "signUpButton")
     // MARK: - LocalizedString SignIn
     public let placeholderEmailAccess = localizedString(forKey: "placeholderEmailAccess")
     public let placeholderpasswordAccess = localizedString(forKey: "placeholderpasswordAccess")

@@ -25,9 +25,11 @@ class IntroView: UIView {
     }()
     private lazy var slogan: UILabel = {
         let label = UILabel()
-        label.text = "HELLO WORD"
-        label.font = UIFont(name: "arial", size: 16)
+        label.text = AppStrings().slogan
+        label.font = UIFont(name: "arial", size: 28)
+        label.textColor = .white
         label.textAlignment = .center
+        label.numberOfLines = 0
         return label
     }()
     private lazy var subTitle: UILabel = {
@@ -35,10 +37,10 @@ class IntroView: UIView {
         return label
     }()
     
-    private lazy var buttonSignIn = ButtonDefault(title: "Já Tenho Login")
+    private lazy var buttonSignIn = ButtonDefault(title: AppStrings().signInButton.uppercased())
     
     private lazy var buttonSignUp: ButtonDefault = {
-        let button = ButtonDefault(title: "Fazer Cadastro")
+        let button = ButtonDefault(title: AppStrings().signUpButton.uppercased())
         button.colorButton = .clear
         button.titleColor = .white
         button.borderColor  = .white
@@ -76,13 +78,13 @@ class IntroView: UIView {
         imageLogo.layout.applyConstraint {
             $0.verticalCenter(view: self)
             $0.center(in: self)
-            $0.under(view: recycleIcon, offSet: 32)
+            $0.under(view: recycleIcon, offSet: 52)
             $0.width(236)
         }
         slogan.layout.applyConstraint {
-            $0.under(view: imageLogo, offSet: 16)
-            $0.left(alignedWith: self, offSet: 16)
-            $0.right(alignedWith: self, offSet: 16)
+            $0.under(view: imageLogo, offSet: 32)
+            $0.left(alignedWith: self, offSet: 32)
+            $0.right(alignedWith: self, offSet: 32)
         }
         buttonSignIn.layout.applyConstraint {
             $0.above(view: buttonSignUp, offSet: 16)
