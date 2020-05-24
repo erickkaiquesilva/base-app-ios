@@ -30,6 +30,8 @@
 		F473317E2479E93F003C7B91 /* AppImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F473317D2479E93F003C7B91 /* AppImages.swift */; };
 		F4733180247A0E15003C7B91 /* IntroProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F473317F247A0E15003C7B91 /* IntroProtocols.swift */; };
 		F4733186247A1091003C7B91 /* TextFieldDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4733185247A1091003C7B91 /* TextFieldDefault.swift */; };
+		F473318B247A2E97003C7B91 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F473318A247A2E97003C7B91 /* SignUpView.swift */; };
+		F473318D247A2EA7003C7B91 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F473318C247A2EA7003C7B91 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		F473317D2479E93F003C7B91 /* AppImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImages.swift; sourceTree = "<group>"; };
 		F473317F247A0E15003C7B91 /* IntroProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroProtocols.swift; sourceTree = "<group>"; };
 		F4733185247A1091003C7B91 /* TextFieldDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDefault.swift; sourceTree = "<group>"; };
+		F473318A247A2E97003C7B91 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		F473318C247A2EA7003C7B91 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,9 +234,9 @@
 			children = (
 				F433C4F12446AB1B0077FFA4 /* InitialCoordinator.swift */,
 				F405FCCF2477259400E4D222 /* Intro */,
-				F433C4EC2446A7CC0077FFA4 /* Home */,
-				F433C4EB2446A7C20077FFA4 /* SignUp */,
 				F433C4EA2446A7B20077FFA4 /* SignIn */,
+				F4733188247A2E74003C7B91 /* SignUp */,
+				F433C4EC2446A7CC0077FFA4 /* Home */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -244,13 +248,6 @@
 				F433C4B92446A7320077FFA4 /* SignInViewController.swift */,
 			);
 			path = SignIn;
-			sourceTree = "<group>";
-		};
-		F433C4EB2446A7C20077FFA4 /* SignUp */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SignUp;
 			sourceTree = "<group>";
 		};
 		F433C4EC2446A7CC0077FFA4 /* Home */ = {
@@ -315,6 +312,23 @@
 				F4733185247A1091003C7B91 /* TextFieldDefault.swift */,
 			);
 			path = TextField;
+			sourceTree = "<group>";
+		};
+		F4733188247A2E74003C7B91 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				F4733189247A2E86003C7B91 /* View */,
+				F473318C247A2EA7003C7B91 /* SignUpViewController.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		F4733189247A2E86003C7B91 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F473318A247A2E97003C7B91 /* SignUpView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -453,6 +467,7 @@
 				F433C4F52446AC770077FFA4 /* SignInView.swift in Sources */,
 				F405FCD22477260400E4D222 /* UIViewController+Ext.swift in Sources */,
 				F433C4F22446AB1B0077FFA4 /* InitialCoordinator.swift in Sources */,
+				F473318B247A2E97003C7B91 /* SignUpView.swift in Sources */,
 				F433C4EE2446A8490077FFA4 /* AppCoordinator.swift in Sources */,
 				F405FCD62477266300E4D222 /* IntroView.swift in Sources */,
 				F433C4BA2446A7320077FFA4 /* SignInViewController.swift in Sources */,
@@ -461,6 +476,7 @@
 				F405FCD42477264100E4D222 /* IntroViewController.swift in Sources */,
 				F4733180247A0E15003C7B91 /* IntroProtocols.swift in Sources */,
 				F405FCD9247726F800E4D222 /* ButtonCustom.swift in Sources */,
+				F473318D247A2EA7003C7B91 /* SignUpViewController.swift in Sources */,
 				F433C4F72446AFD00077FFA4 /* AppAssets.swift in Sources */,
 				F433C4B82446A7320077FFA4 /* SceneDelegate.swift in Sources */,
 				F473317C2479E78D003C7B91 /* AppColors.swift in Sources */,

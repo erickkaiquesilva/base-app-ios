@@ -16,6 +16,11 @@
 "notRegisteredBtn" = "Não sou cadastrado ainda!";
 "writeCredentials" = "Gravar credenciais neste aparelho!";
 // MARK: - Scene Sign Up
+"placeholderName" = "Nome Completo";
+"placeholderCPF" = "CPF";
+"placeholderEmail" = "E-mail";
+"placeholderPassword" = "Senha";
+"finishRegister" = "Cadastrar-se";
 // MARK: - Scene Home
 // MARK: - Scene Profile
 // MARK: - Scene First Access

@@ -18,8 +18,9 @@ class InitialCoordinator: AppCoordinatorProtocol {
     }
     
     func start() {
-        let viewController = createIntroViewController()
-        navigationController.pushViewController(viewController, animated: true)
+//        let viewController = createIntroViewController()
+        
+        navigationController.pushViewController(createSignUpViewController(), animated: true)
     }
     
     private func createIntroViewController() -> IntroViewController {
@@ -35,8 +36,10 @@ class InitialCoordinator: AppCoordinatorProtocol {
         return viewController
     }
     
-    private func createSignUpViewController() {
-        
+    private func createSignUpViewController() -> SignUpViewController {
+        let viewController = SignUpViewController()
+        currentViewController = viewController
+        return viewController
     }
 }
 
@@ -47,6 +50,7 @@ extension InitialCoordinator: IntroViewControllerDelegate {
     }
     
     func showSignUp() {
-        
+        let viewController = createSignUpViewController()
+        navigationController.pushViewController(viewController, animated: true)
     }
 }

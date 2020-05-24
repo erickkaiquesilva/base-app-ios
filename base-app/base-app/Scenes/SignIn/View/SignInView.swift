@@ -69,6 +69,12 @@ class SignInView: UIView {
     func setupUI() {
         buildHierarchy()
         addConstraints()
+        handlerBtnLogar()
+    }
+    private func handlerBtnLogar() {
+        buttonSignIn.didTap = { [weak self] in
+            self?.handlerButtonSignIn?(self?.textFieldEmail.text, self?.textFieldPassword.text)
+        }
     }
     private func buildHierarchy() {
         addSubview(recycleIcon)

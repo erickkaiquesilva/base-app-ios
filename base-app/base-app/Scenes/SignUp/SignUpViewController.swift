@@ -1,18 +1,17 @@
 //
-//  ViewController.swift
+//  SignUpViewController.swift
 //  base-app
 //
-//  Created by Erick Kaique Da Silva on 14/04/20.
+//  Created by Erick Kaique Da Silva on 24/05/20.
 //  Copyright © 2020 Erick Kaique Da Silva. All rights reserved.
 //
 
 import UIKit
 
-class SignInViewController: UIViewController {
+class SignUpViewController: UIViewController {
+    private let contentView: SignUpView
     
-    private let contentView: SignInView
-    
-    init(contentView: SignInView = SignInView()) {
+    init(contentView: SignUpView = SignUpView()) {
         self.contentView = contentView
         super.init(nibName: nil, bundle: nil)
         bindLayoutEvents()
@@ -24,18 +23,15 @@ class SignInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
     override func loadView() {
-        super.loadView()
         view = contentView
     }
     
     private func bindLayoutEvents() {
-        contentView.handlerButtonSignIn = { [weak self] email, password in
-            print("EMAIL: \(email), PASSWORD: \(password)")
+        contentView.handleFinishRegister = { [weak self] nameUser, cpf, emailAdress, password in
+            print("DADOS USUÁRIO: \(nameUser), \(cpf), \(emailAdress), \(password)")
         }
     }
 }
-

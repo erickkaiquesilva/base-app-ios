@@ -21,8 +21,12 @@ public class AppStrings {
     public let signInBtn = localizedString(forKey: "signInBtn")
     public let notRegisteredBtn = localizedString(forKey: "notRegisteredBtn")
     public let writeCredentials = localizedString(forKey: "writeCredentials")
-    
     // MARK: - LocalizedString SignUp
+    public let placeholderName = localizedString(forKey: "placeholderName")
+    public let placeholderCPF = localizedString(forKey: "placeholderCPF")
+    public let placeholderEmail = localizedString(forKey: "placeholderEmail")
+    public let placeholderPassword = localizedString(forKey: "placeholderPassword")
+    public let finishRegister = localizedString(forKey: "finishRegister")
 }
 
 extension AppStrings {
