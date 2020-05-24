@@ -25,4 +25,8 @@ struct AppColors {
     var blackLight: UIColor {
         return colorOrDefault("blackLight")
     }
+    
+    var whiteDefault: UIColor {
+        return colorOrDefault("whiteDefault")
+    }
 }

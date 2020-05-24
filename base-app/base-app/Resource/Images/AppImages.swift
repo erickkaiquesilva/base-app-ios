@@ -21,4 +21,8 @@ struct AppImages {
     var recycleIcon: UIImage {
         return imageOrDefault("recycleIcon")
     }
+    
+    var happyIcon: UIImage {
+        return imageOrDefault("happyIcon")
+    }
 }

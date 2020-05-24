@@ -21,6 +21,10 @@
 "placeholderEmail" = "E-mail";
 "placeholderPassword" = "Senha";
 "finishRegister" = "Cadastrar-se";
+// MARK: - Scene Welcome
+"descriptionWelcome" = "Você acaba de se juntar a um desafio único e que só tem a ajudar o mundo todos, recicle o seu lixo e ainda ganhe com isso.";
+"titleWelcome" = "Parabéns";
+"initialButton" = "Começar a Reciclar";
 // MARK: - Scene Home
 // MARK: - Scene Profile
 // MARK: - Scene First Access

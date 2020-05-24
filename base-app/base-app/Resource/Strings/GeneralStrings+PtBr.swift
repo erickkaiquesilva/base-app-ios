@@ -27,6 +27,10 @@ public class AppStrings {
     public let placeholderEmail = localizedString(forKey: "placeholderEmail")
     public let placeholderPassword = localizedString(forKey: "placeholderPassword")
     public let finishRegister = localizedString(forKey: "finishRegister")
+    // MARK: - LocalizedString Welcome
+    public let descriptionWelcome = localizedString(forKey: "descriptionWelcome")
+    public let titleWelcome = localizedString(forKey: "titleWelcome")
+    public let initialButton = localizedString(forKey: "initialButton")
 }
 
 extension AppStrings {

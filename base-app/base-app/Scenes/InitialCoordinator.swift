@@ -19,8 +19,7 @@ class InitialCoordinator: AppCoordinatorProtocol {
     
     func start() {
 //        let viewController = createIntroViewController()
-        
-        navigationController.pushViewController(createSignUpViewController(), animated: true)
+        navigationController.pushViewController(createWelcomeViewController(), animated: true)
     }
     
     private func createIntroViewController() -> IntroViewController {
@@ -38,6 +37,12 @@ class InitialCoordinator: AppCoordinatorProtocol {
     
     private func createSignUpViewController() -> SignUpViewController {
         let viewController = SignUpViewController()
+        currentViewController = viewController
+        return viewController
+    }
+    
+    private func createWelcomeViewController() -> WelcomeViewController {
+        let viewController = WelcomeViewController()
         currentViewController = viewController
         return viewController
     }
