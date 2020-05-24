@@ -10,10 +10,11 @@
 "signInButton" = "Já Tenho Login";
 "signUpButton" = "Fazer Cadastro";
 // MARK: - Scene Sign In
-"placeholderEmailAccess" = "Seu Email de Acesso";
-"placeholderpasswordAccess" = "Sua Senha de Acesso";
-"signInBtn" = "Entrar";
+"placeholderEmailAccess" = "Informe Seu Email";
+"placeholderpasswordAccess" = "Informe Sua Senha";
+"signInBtn" = "Logar";
 "notRegisteredBtn" = "Não sou cadastrado ainda!";
+"writeCredentials" = "Gravar credenciais neste aparelho!";
 // MARK: - Scene Sign Up
 // MARK: - Scene Home
 // MARK: - Scene Profile

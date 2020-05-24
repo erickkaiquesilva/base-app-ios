@@ -20,6 +20,7 @@ public class AppStrings {
     public let placeholderpasswordAccess = localizedString(forKey: "placeholderpasswordAccess")
     public let signInBtn = localizedString(forKey: "signInBtn")
     public let notRegisteredBtn = localizedString(forKey: "notRegisteredBtn")
+    public let writeCredentials = localizedString(forKey: "writeCredentials")
     
     // MARK: - LocalizedString SignUp
 }

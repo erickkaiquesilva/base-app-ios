@@ -28,6 +28,8 @@
 		F47331762479E497003C7B91 /* NSLayoutConstraint+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47331752479E497003C7B91 /* NSLayoutConstraint+Ext.swift */; };
 		F473317C2479E78D003C7B91 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47331782479E6A1003C7B91 /* AppColors.swift */; };
 		F473317E2479E93F003C7B91 /* AppImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F473317D2479E93F003C7B91 /* AppImages.swift */; };
+		F4733180247A0E15003C7B91 /* IntroProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F473317F247A0E15003C7B91 /* IntroProtocols.swift */; };
+		F4733186247A1091003C7B91 /* TextFieldDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4733185247A1091003C7B91 /* TextFieldDefault.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		F47331752479E497003C7B91 /* NSLayoutConstraint+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Ext.swift"; sourceTree = "<group>"; };
 		F47331782479E6A1003C7B91 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		F473317D2479E93F003C7B91 /* AppImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImages.swift; sourceTree = "<group>"; };
+		F473317F247A0E15003C7B91 /* IntroProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroProtocols.swift; sourceTree = "<group>"; };
+		F4733185247A1091003C7B91 /* TextFieldDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDefault.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 			children = (
 				F405FCD0247725A200E4D222 /* View */,
 				F405FCD32477264100E4D222 /* IntroViewController.swift */,
+				F473317F247A0E15003C7B91 /* IntroProtocols.swift */,
 			);
 			path = Intro;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 		F433C4B42446A7320077FFA4 /* base-app */ = {
 			isa = PBXGroup;
 			children = (
+				F4733182247A106C003C7B91 /* DesignSystem */,
 				F433C4E82446A7680077FFA4 /* AppBuilder */,
 				F433C4E72446A75D0077FFA4 /* Helpers */,
 				F433C4E62446A7540077FFA4 /* Models */,
@@ -227,7 +233,6 @@
 				F433C4EC2446A7CC0077FFA4 /* Home */,
 				F433C4EB2446A7C20077FFA4 /* SignUp */,
 				F433C4EA2446A7B20077FFA4 /* SignIn */,
-				F433C4B92446A7320077FFA4 /* SignInViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -236,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				F433C4F32446AC550077FFA4 /* View */,
+				F433C4B92446A7320077FFA4 /* SignInViewController.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -293,6 +299,22 @@
 				F47331782479E6A1003C7B91 /* AppColors.swift */,
 			);
 			path = Colors;
+			sourceTree = "<group>";
+		};
+		F4733182247A106C003C7B91 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				F4733184247A1081003C7B91 /* TextField */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		F4733184247A1081003C7B91 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				F4733185247A1091003C7B91 /* TextFieldDefault.swift */,
+			);
+			path = TextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -437,11 +459,13 @@
 				F433C4FA2446B0B10077FFA4 /* GeneralStrings+PtBr.swift in Sources */,
 				F433C4B62446A7320077FFA4 /* AppDelegate.swift in Sources */,
 				F405FCD42477264100E4D222 /* IntroViewController.swift in Sources */,
+				F4733180247A0E15003C7B91 /* IntroProtocols.swift in Sources */,
 				F405FCD9247726F800E4D222 /* ButtonCustom.swift in Sources */,
 				F433C4F72446AFD00077FFA4 /* AppAssets.swift in Sources */,
 				F433C4B82446A7320077FFA4 /* SceneDelegate.swift in Sources */,
 				F473317C2479E78D003C7B91 /* AppColors.swift in Sources */,
 				F47331762479E497003C7B91 /* NSLayoutConstraint+Ext.swift in Sources */,
+				F4733186247A1091003C7B91 /* TextFieldDefault.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

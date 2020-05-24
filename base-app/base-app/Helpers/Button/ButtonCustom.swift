@@ -38,10 +38,18 @@ class ButtonDefault: UIButton {
         self.layer.borderColor = AppColors().greenLigth.cgColor
         self.layer.cornerRadius = 10
         self.layout.applyConstraint { $0.height(60) }
+        bindButtonEvents()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    private func bindButtonEvents() {
+        self.addTarget(self, action: #selector(handlerButton), for: .touchUpInside)
+    }
+    
+    @objc private func handlerButton() {
+        didTap?()
+    }
 }

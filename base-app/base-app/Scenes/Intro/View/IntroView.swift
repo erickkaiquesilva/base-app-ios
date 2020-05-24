@@ -10,6 +10,9 @@ import UIKit
 
 class IntroView: UIView {
     
+    var didTapButtonSignIn: (() -> Void)?
+    var didTapButtonSignUp: (() -> Void)?
+    
     private lazy var recycleIcon: UIImageView = {
         let imageView = UIImageView()
         imageView.image = AppImages().recycleIcon
@@ -60,6 +63,12 @@ class IntroView: UIView {
     func setupUI() {
         buildHierarchy()
         addConstraints()
+        bindLayoutEvents()
+    }
+    
+    private func bindLayoutEvents() {
+        buttonSignIn.didTap = { self.didTapButtonSignIn?() }
+        buttonSignUp.didTap = { self.didTapButtonSignUp?() }
     }
     
     private func buildHierarchy() {
@@ -76,8 +85,8 @@ class IntroView: UIView {
             $0.horizontalCenter(view: imageLogo)
         }
         imageLogo.layout.applyConstraint {
-            $0.verticalCenter(view: self)
-            $0.center(in: self)
+            $0.verticalCenter(view: self, offSet: -106)
+            $0.horizontalCenter(view: self)
             $0.under(view: recycleIcon, offSet: 52)
             $0.width(236)
         }
