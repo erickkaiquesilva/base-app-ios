@@ -30,7 +30,7 @@ class ButtonDefault: UIButton {
         }
     }
     
-    init(title: String) {
+    init(title: String = "") {
         super.init(frame: .zero)
         self.setTitle(title, for: .normal)
         self.backgroundColor = AppColors().greenLigth

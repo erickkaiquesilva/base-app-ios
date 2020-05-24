@@ -33,8 +33,11 @@
 		F473318B247A2E97003C7B91 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F473318A247A2E97003C7B91 /* SignUpView.swift */; };
 		F473318D247A2EA7003C7B91 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F473318C247A2EA7003C7B91 /* SignUpViewController.swift */; };
 		F4733191247AE0D0003C7B91 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4733190247AE0D0003C7B91 /* WelcomeViewController.swift */; };
-		F4733193247AE0D9003C7B91 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4733192247AE0D9003C7B91 /* WelcomeView.swift */; };
 		F4733195247AE9AD003C7B91 /* SignUpProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4733194247AE9AD003C7B91 /* SignUpProtocols.swift */; };
+		F473319A247AF25D003C7B91 /* FirstAccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4733199247AF25D003C7B91 /* FirstAccessViewController.swift */; };
+		F473319D247AF274003C7B91 /* FirsAccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F473319C247AF274003C7B91 /* FirsAccessView.swift */; };
+		F473319F247AF27C003C7B91 /* FirsAccessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F473319E247AF27C003C7B91 /* FirsAccessModel.swift */; };
+		F47331A1247AF28C003C7B91 /* FirsAccessViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47331A0247AF28C003C7B91 /* FirsAccessViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,8 +90,11 @@
 		F473318A247A2E97003C7B91 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		F473318C247A2EA7003C7B91 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		F4733190247AE0D0003C7B91 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		F4733192247AE0D9003C7B91 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		F4733194247AE9AD003C7B91 /* SignUpProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpProtocols.swift; sourceTree = "<group>"; };
+		F4733199247AF25D003C7B91 /* FirstAccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAccessViewController.swift; sourceTree = "<group>"; };
+		F473319C247AF274003C7B91 /* FirsAccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirsAccessView.swift; sourceTree = "<group>"; };
+		F473319E247AF27C003C7B91 /* FirsAccessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirsAccessModel.swift; sourceTree = "<group>"; };
+		F47331A0247AF28C003C7B91 /* FirsAccessViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirsAccessViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +244,7 @@
 		F433C4E92446A76F0077FFA4 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				F4733198247AF23E003C7B91 /* FirstAccess */,
 				F433C4F12446AB1B0077FFA4 /* InitialCoordinator.swift */,
 				F405FCCF2477259400E4D222 /* Intro */,
 				F433C4EA2446A7B20077FFA4 /* SignIn */,
@@ -351,7 +358,25 @@
 		F473318F247AE0C2003C7B91 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F4733192247AE0D9003C7B91 /* WelcomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F4733198247AF23E003C7B91 /* FirstAccess */ = {
+			isa = PBXGroup;
+			children = (
+				F473319B247AF262003C7B91 /* View */,
+				F4733199247AF25D003C7B91 /* FirstAccessViewController.swift */,
+				F47331A0247AF28C003C7B91 /* FirsAccessViewModel.swift */,
+			);
+			path = FirstAccess;
+			sourceTree = "<group>";
+		};
+		F473319B247AF262003C7B91 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F473319C247AF274003C7B91 /* FirsAccessView.swift */,
+				F473319E247AF27C003C7B91 /* FirsAccessModel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -495,8 +520,11 @@
 				F433C4F22446AB1B0077FFA4 /* InitialCoordinator.swift in Sources */,
 				F473318B247A2E97003C7B91 /* SignUpView.swift in Sources */,
 				F4733191247AE0D0003C7B91 /* WelcomeViewController.swift in Sources */,
+				F47331A1247AF28C003C7B91 /* FirsAccessViewModel.swift in Sources */,
 				F433C4EE2446A8490077FFA4 /* AppCoordinator.swift in Sources */,
+				F473319D247AF274003C7B91 /* FirsAccessView.swift in Sources */,
 				F405FCD62477266300E4D222 /* IntroView.swift in Sources */,
+				F473319F247AF27C003C7B91 /* FirsAccessModel.swift in Sources */,
 				F433C4BA2446A7320077FFA4 /* SignInViewController.swift in Sources */,
 				F433C4FA2446B0B10077FFA4 /* GeneralStrings+PtBr.swift in Sources */,
 				F433C4B62446A7320077FFA4 /* AppDelegate.swift in Sources */,
@@ -505,7 +533,7 @@
 				F405FCD9247726F800E4D222 /* ButtonCustom.swift in Sources */,
 				F473318D247A2EA7003C7B91 /* SignUpViewController.swift in Sources */,
 				F433C4F72446AFD00077FFA4 /* AppAssets.swift in Sources */,
-				F4733193247AE0D9003C7B91 /* WelcomeView.swift in Sources */,
+				F473319A247AF25D003C7B91 /* FirstAccessViewController.swift in Sources */,
 				F433C4B82446A7320077FFA4 /* SceneDelegate.swift in Sources */,
 				F473317C2479E78D003C7B91 /* AppColors.swift in Sources */,
 				F47331762479E497003C7B91 /* NSLayoutConstraint+Ext.swift in Sources */,
