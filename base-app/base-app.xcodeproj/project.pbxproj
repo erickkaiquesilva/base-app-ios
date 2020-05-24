@@ -38,6 +38,7 @@
 		F473319D247AF274003C7B91 /* FirsAccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F473319C247AF274003C7B91 /* FirsAccessView.swift */; };
 		F473319F247AF27C003C7B91 /* FirsAccessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F473319E247AF27C003C7B91 /* FirsAccessModel.swift */; };
 		F47331A1247AF28C003C7B91 /* FirsAccessViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47331A0247AF28C003C7B91 /* FirsAccessViewModel.swift */; };
+		F47331A3247AF4C6003C7B91 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47331A2247AF4C6003C7B91 /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		F473319C247AF274003C7B91 /* FirsAccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirsAccessView.swift; sourceTree = "<group>"; };
 		F473319E247AF27C003C7B91 /* FirsAccessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirsAccessModel.swift; sourceTree = "<group>"; };
 		F47331A0247AF28C003C7B91 /* FirsAccessViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirsAccessViewModel.swift; sourceTree = "<group>"; };
+		F47331A2247AF4C6003C7B91 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -358,6 +360,7 @@
 		F473318F247AE0C2003C7B91 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F47331A2247AF4C6003C7B91 /* WelcomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -516,6 +519,7 @@
 				F473317E2479E93F003C7B91 /* AppImages.swift in Sources */,
 				F4733195247AE9AD003C7B91 /* SignUpProtocols.swift in Sources */,
 				F433C4F52446AC770077FFA4 /* SignInView.swift in Sources */,
+				F47331A3247AF4C6003C7B91 /* WelcomeView.swift in Sources */,
 				F405FCD22477260400E4D222 /* UIViewController+Ext.swift in Sources */,
 				F433C4F22446AB1B0077FFA4 /* InitialCoordinator.swift in Sources */,
 				F473318B247A2E97003C7B91 /* SignUpView.swift in Sources */,
