@@ -11,11 +11,13 @@ import Foundation
 public class AppStrings {
     private static let tableNameStrings = "GeneralStrings+PtBr"
     
+    // MARK: - LocalizedString Intro
+    public let slogan = localizedString(forKey: "slogan")
     // MARK: - LocalizedString SignIn
-    public static let placeholderEmailAccess = localizedString(forKey: "placeholderEmailAccess")
-    public static let placeholderpasswordAccess = localizedString(forKey: "placeholderpasswordAccess")
-    public static let signInBtn = localizedString(forKey: "signInBtn")
-    public static let notRegisteredBtn = localizedString(forKey: "notRegisteredBtn")
+    public let placeholderEmailAccess = localizedString(forKey: "placeholderEmailAccess")
+    public let placeholderpasswordAccess = localizedString(forKey: "placeholderpasswordAccess")
+    public let signInBtn = localizedString(forKey: "signInBtn")
+    public let notRegisteredBtn = localizedString(forKey: "notRegisteredBtn")
     
     // MARK: - LocalizedString SignUp
 }

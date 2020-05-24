@@ -5,6 +5,8 @@
   Created by Erick Kaique Da Silva on 15/04/20.
   Copyright © 2020 Erick Kaique Da Silva. All rights reserved.
 */
+// MARK: - Scene Intro
+"slogan" = "Um jeito diferente de reciclar";
 // MARK: - Scene Sign In
 "placeholderEmailAccess" = "Seu Email de Acesso";
 "placeholderpasswordAccess" = "Sua Senha de Acesso";
