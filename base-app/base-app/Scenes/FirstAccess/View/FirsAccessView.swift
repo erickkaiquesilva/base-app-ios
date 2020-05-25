@@ -8,11 +8,18 @@
 
 import UIKit
 
-class FirstAccessView: UIView {
+class FirstAccessView: UIViewController {
     
     private lazy var firsAccessTitle: UILabel = {
         let label = UILabel()
+        label.textAlignment = .left
         return label
+    }()
+    
+    private lazy var imageIcon: UIImageView = {
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFit
+        return imageView
     }()
     
     private lazy var firstAccessDescription: UILabel = {
@@ -20,14 +27,13 @@ class FirstAccessView: UIView {
         return label
     }()
     
-    private lazy var nextButton: ButtonDefault = {
-        let buttonDefault = ButtonDefault()
-        return buttonDefault
-    }()
-    
-    override init(frame: CGRect) {
-        super.init(frame: .zero)
-        backgroundColor = AppColors().whiteDefault
+    init(model: FirstAccessModel) {
+        super.init(nibName: nil, bundle: nil)
+        self.firsAccessTitle.text = model.title
+        self.imageIcon.image = model.imageIcon
+        self.firstAccessDescription.text = model.description
+        view.backgroundColor = AppColors().whiteDefault
+        setupUI()
     }
     
     required init?(coder: NSCoder) {
@@ -35,14 +41,31 @@ class FirstAccessView: UIView {
     }
     
     func setupUI() {
-        
+        buildHierarchy()
+        addConstraints()
     }
     
     private func buildHierarchy() {
-        
+        view.addSubview(firsAccessTitle)
+        view.addSubview(imageIcon)
+        view.addSubview(firstAccessDescription)
     }
     
     private func addConstraints() {
-        
+        firsAccessTitle.layout.applyConstraint {
+            $0.topSafeArea(aligneWith: self.view, offset: 16)
+            $0.left(alignedWith: self.view, offSet: 16)
+            $0.right(alignedWith: self.view, offSet: 32)
+        }
+        imageIcon.layout.applyConstraint {
+            $0.under(view: firsAccessTitle, offSet: 32)
+            $0.horizontalCenter(view: self.view)
+            $0.size(56)
+        }
+        firstAccessDescription.layout.applyConstraint {
+            $0.under(view: imageIcon, offSet: 16)
+            $0.left(alignedWith: self.view, offSet: 16)
+            $0.right(alignedWith: self.view, offSet: 16)
+        }
     }
 }

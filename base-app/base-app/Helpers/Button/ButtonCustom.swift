@@ -12,18 +12,21 @@ class ButtonDefault: UIButton {
     
     public var didTap: (() -> Void)?
     
+    public var titleButton: String? {
+        didSet {
+            self.setTitle(titleButton, for: .normal)
+        }
+    }
     public var colorButton: UIColor? {
         didSet {
             self.backgroundColor = colorButton
         }
     }
-    
     public var titleColor: UIColor? {
         didSet {
             self.titleLabel?.textColor = titleColor
         }
     }
-    
     public var borderColor: UIColor? {
         didSet {
             self.layer.borderColor = borderColor?.cgColor

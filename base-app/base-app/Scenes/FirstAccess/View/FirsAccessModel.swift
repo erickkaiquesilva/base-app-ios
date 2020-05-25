@@ -6,10 +6,10 @@
 //  Copyright © 2020 Erick Kaique Da Silva. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct FirstAccessModel {
     let title: String
     let description: String
-    let titleButton: String
+    let imageIcon: UIImage
 }

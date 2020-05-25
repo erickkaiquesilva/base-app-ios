@@ -25,4 +25,8 @@ struct AppImages {
     var happyIcon: UIImage {
         return imageOrDefault("happyIcon")
     }
+    
+    var earthIcon: UIImage {
+        return imageOrDefault("earthIcon")
+    }
 }
