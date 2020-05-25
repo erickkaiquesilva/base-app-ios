@@ -53,7 +53,7 @@ class FirstAccessViewController: UIViewController {
     
     private func addConstraints() {
         pageViewController.view.layout.applyConstraint { view in
-            view.top(alignedWith: self.view)
+            view.topSafeArea(aligneWith: self.view)
             view.left(alignedWith: self.view)
             view.right(alignedWith: self.view)
             view.bottomSafaArea(alignedWith: self.view, offset: 16)

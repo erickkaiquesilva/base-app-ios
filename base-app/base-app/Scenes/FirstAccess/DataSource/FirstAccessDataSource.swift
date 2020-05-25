@@ -29,7 +29,6 @@ class FirstAccessDataSource: NSObject, UIPageViewControllerDataSource, UIPageVie
         guard let currentVCIndex = pages.firstIndex(of: viewController), currentVCIndex < pages.count - 1 else {
             return nil
         }
-
         return pages[currentVCIndex + 1]
     }
 }

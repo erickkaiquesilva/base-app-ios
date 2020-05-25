@@ -30,14 +30,15 @@ class FirstAccessViewModel: FirstAccessViewModelType {
     
     private func createModels() {
         var models = [FirstAccessModel]()
-        
-        models.append(FirstAccessModel(title: "PRIMEIRO MODEL PEENCHIDO",
-                                       description: "Este é um teste simples para pagecontroller view", imageIcon: AppImages().earthIcon))
-        models.append(FirstAccessModel(title: "SEGUNDO MODEL PEENCHIDO",
-                                       description: "Este é um teste simples para pagecontroller view", imageIcon: AppImages().recycleIcon))
-        models.append(FirstAccessModel(title: "TERCEIRO MODEL PEENCHIDO",
-                                       description: "Este é um teste simples para pagecontroller view", imageIcon: AppImages().recycleIcon))
-        
+        models.append(FirstAccessModel(title: AppStrings().welcomeFirstAccess.uppercased(),
+                                       description: AppStrings().whoWeAre.uppercased(),
+                                       imageIcon: AppImages().earthIcon))
+        models.append(FirstAccessModel(title: AppStrings().whatRecycle.uppercased(),
+                                       description: AppStrings().descriptionRecycle.uppercased(),
+                                       imageIcon: AppImages().recycleIcon))
+        models.append(FirstAccessModel(title: AppStrings().whatDoYouGet.uppercased(),
+                                       description: AppStrings().descriptionWhatDoYouGet.uppercased(),
+                                       imageIcon: AppImages().recycleIcon))
         self.models = models
     }
 }

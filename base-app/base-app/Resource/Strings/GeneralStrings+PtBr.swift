@@ -31,6 +31,13 @@ public class AppStrings {
     public let descriptionWelcome = localizedString(forKey: "descriptionWelcome")
     public let titleWelcome = localizedString(forKey: "titleWelcome")
     public let initialButton = localizedString(forKey: "initialButton")
+    // MARK: - LocalizedString FirstAccess
+    public let welcomeFirstAccess = localizedString(forKey: "welcomeFirstAccess")
+    public let whoWeAre = localizedString(forKey: "whoWeAre")
+    public let whatRecycle = localizedString(forKey: "whatRecycle")
+    public let descriptionRecycle = localizedString(forKey: "descriptionRecycle")
+    public let whatDoYouGet = localizedString(forKey: "whatDoYouGet")
+    public let descriptionWhatDoYouGet = localizedString(forKey: "descriptionWhatDoYouGet")
 }
 
 extension AppStrings {

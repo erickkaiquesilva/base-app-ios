@@ -42,6 +42,7 @@
 		F47331A8247AF867003C7B91 /* FirstAccessDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47331A7247AF867003C7B91 /* FirstAccessDataSource.swift */; };
 		F47331AA247B2851003C7B91 /* FirstAccessPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47331A9247B2851003C7B91 /* FirstAccessPageViewController.swift */; };
 		F47331AF247B37EA003C7B91 /* FirstAccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47331AE247B37EA003C7B91 /* FirstAccessViewController.swift */; };
+		F47331B1247B6235003C7B91 /* UILabel+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47331B0247B6235003C7B91 /* UILabel+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		F47331A7247AF867003C7B91 /* FirstAccessDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAccessDataSource.swift; sourceTree = "<group>"; };
 		F47331A9247B2851003C7B91 /* FirstAccessPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAccessPageViewController.swift; sourceTree = "<group>"; };
 		F47331AE247B37EA003C7B91 /* FirstAccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAccessViewController.swift; sourceTree = "<group>"; };
+		F47331B0247B6235003C7B91 /* UILabel+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +236,7 @@
 				F405FCD7247726E800E4D222 /* Button */,
 				F433C4F62446AFD00077FFA4 /* AppAssets.swift */,
 				F405FCD12477260400E4D222 /* UIViewController+Ext.swift */,
+				F47331B0247B6235003C7B91 /* UILabel+Ext.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -542,6 +545,7 @@
 				F433C4F22446AB1B0077FFA4 /* InitialCoordinator.swift in Sources */,
 				F473318B247A2E97003C7B91 /* SignUpView.swift in Sources */,
 				F4733191247AE0D0003C7B91 /* WelcomeViewController.swift in Sources */,
+				F47331B1247B6235003C7B91 /* UILabel+Ext.swift in Sources */,
 				F47331A1247AF28C003C7B91 /* FirsAccessViewModel.swift in Sources */,
 				F433C4EE2446A8490077FFA4 /* AppCoordinator.swift in Sources */,
 				F473319D247AF274003C7B91 /* FirsAccessView.swift in Sources */,

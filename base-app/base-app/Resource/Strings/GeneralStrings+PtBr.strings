@@ -28,3 +28,9 @@
 // MARK: - Scene Home
 // MARK: - Scene Profile
 // MARK: - Scene First Access
+"welcomeFirstAccess" = "Bem Vindo a sua jornada Green";
+"whoWeAre" = "Nós da GREEN CODE temos como objetivo ajudar os moradores da terra a reciclarem os residuos que eles geram, como plástico, metal, papel entre outros. Para isso ficamos felizes com o fato de você permitir que nós ajude você a descarta seu lixo de uma maneira mais agradavel ao meio ambiente e a sociedade mundial.";
+"whatRecycle" = "O que a green code recicla";
+"descriptionRecycle" = "Inicialmente as MACHINE da GREEN CODE recolhem materiais plásticos e também materiais composto de vidro.";
+"whatDoYouGet" = "O que você ganha reciclando ?";
+"descriptionWhatDoYouGet" = "Nós da GREEN CODE pensamos no que poderiamos dar a nossos recicladores, e pensando nisso nós resolvemos dar pontos GREEN a cada material reciclado e com estes pontos o nossos recicladores poderiam trocar por descontos em produtos, serviços ou até mesmo doar para uma ONG.";

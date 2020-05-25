@@ -13,6 +13,8 @@ class FirstAccessView: UIViewController {
     private lazy var firsAccessTitle: UILabel = {
         let label = UILabel()
         label.textAlignment = .left
+        label.font = UIFont(name: "arial", size: 42)
+        label.numberOfLines = 0
         return label
     }()
     
@@ -24,6 +26,10 @@ class FirstAccessView: UIViewController {
     
     private lazy var firstAccessDescription: UILabel = {
         let label = UILabel()
+        label.textAlignment = .left
+        label.font = UIFont(name: "arial", size: 18)
+        label.setLineSpacing(lineSpacing: 10.0, lineHeightMutable: 3.0)
+        label.numberOfLines = 0
         return label
     }()
     
@@ -53,7 +59,7 @@ class FirstAccessView: UIViewController {
     
     private func addConstraints() {
         firsAccessTitle.layout.applyConstraint {
-            $0.topSafeArea(aligneWith: self.view, offset: 16)
+            $0.topSafeArea(aligneWith: self.view, offset: 32)
             $0.left(alignedWith: self.view, offSet: 16)
             $0.right(alignedWith: self.view, offSet: 32)
         }
@@ -63,7 +69,7 @@ class FirstAccessView: UIViewController {
             $0.size(56)
         }
         firstAccessDescription.layout.applyConstraint {
-            $0.under(view: imageIcon, offSet: 16)
+            $0.under(view: imageIcon, offSet: 32)
             $0.left(alignedWith: self.view, offSet: 16)
             $0.right(alignedWith: self.view, offSet: 16)
         }
