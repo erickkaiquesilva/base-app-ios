@@ -38,13 +38,18 @@ class FirstAccessPageViewController: UIPageViewController {
     }
     
     func setup() {
-        buildHierarchy()
         addConstraints()
+        bindLayoutEvents()
     }
     
     private func setupPageView() {
+        pageDataSource.pages = pages
         if let first = pages.first {
             setViewControllers([first], direction: .forward, animated: true, completion: nil)
+        }
+        pageDataSource.didChangePageTo = { [weak self] newPage in
+            self?.pageControl.currentPage = newPage
+//            let lastIndex = (self?.pages.count ?? 0) - 1
         }
     }
     
@@ -52,7 +57,7 @@ class FirstAccessPageViewController: UIPageViewController {
         pageControl.numberOfPages = pages.count
     }
     
-    private func buildHierarchy() {
+    private func bindLayoutEvents() {
         dataSource = pageDataSource
         delegate = pageDataSource
     }
@@ -66,7 +71,6 @@ class FirstAccessPageViewController: UIPageViewController {
             $0.bottom(alignedWith: view)
         }
     }
-    
 }
 
 extension FirstAccessPageViewController: FirstAccessPageViewControllerType {

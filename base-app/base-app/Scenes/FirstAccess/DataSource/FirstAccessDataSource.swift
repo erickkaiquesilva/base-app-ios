@@ -10,6 +10,7 @@ import UIKit
 
 class FirstAccessDataSource: NSObject, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     
+    var didChangePageTo: ((_ newPage: Int) -> Void)?
     var pages: [UIViewController]
     
     init(pages: [UIViewController]) {
@@ -30,5 +31,14 @@ class FirstAccessDataSource: NSObject, UIPageViewControllerDataSource, UIPageVie
             return nil
         }
         return pages[currentVCIndex + 1]
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool,
+                            previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        if let viewControllers = pageViewController.viewControllers {
+            if let viewControllerIndex = self.pages.firstIndex(of: viewControllers[0]) {
+                didChangePageTo?(viewControllerIndex)
+            }
+        }
     }
 }
